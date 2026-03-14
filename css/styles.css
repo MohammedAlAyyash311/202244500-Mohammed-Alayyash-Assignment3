@@ -1,0 +1,253 @@
+/* ===== RESET DEFAULT BROWSER STYLES ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Smooth scrolling between sections */
+html{
+scroll-behavior:smooth;
+}
+
+/* ===== LIGHT MODE COLORS ===== */
+:root{
+--bg-color:#ffffff;
+--text-color:#222;
+--card-bg:#f4f4f4;
+--accent-color:#0077cc;
+--header-bg:#ffffff;
+}
+
+/* ===== DARK MODE COLORS ===== */
+body.dark-mode{
+--bg-color:#121212;
+--text-color:#f5f5f5;
+--card-bg:#1f1f1f;
+--accent-color:#66b2ff;
+--header-bg:#1a1a1a;
+}
+
+/* ===== GENERAL PAGE STYLE ===== */
+body{
+font-family:Arial;
+line-height:1.6;
+background:var(--bg-color);
+color:var(--text-color);
+
+/* Smooth transition between dark and light */
+transition:background 0.4s,color 0.4s;
+}
+
+/* Section spacing */
+.section{
+padding:4rem 2rem;
+max-width:1100px;
+margin:auto;
+}
+
+/* ===== HEADER ===== */
+.header{
+background:var(--header-bg);
+border-bottom:1px solid #ddd;
+position:sticky;
+top:0;
+}
+
+/* Navigation layout */
+.navbar{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:1rem 2rem;
+}
+
+/* Logo style */
+.logo{
+font-size:1.5rem;
+}
+
+/* Navigation links */
+.nav-links{
+list-style:none;
+display:flex;
+gap:1.5rem;
+}
+
+.nav-links a{
+text-decoration:none;
+color:var(--text-color);
+transition:0.3s;
+}
+
+/* Hover animation */
+.nav-links a:hover{
+color:var(--accent-color);
+}
+
+/* Theme toggle button */
+#theme-toggle{
+background:var(--accent-color);
+color:white;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover effect */
+#theme-toggle:hover{
+transform:translateY(-2px);
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+max-width:1100px;
+margin:auto;
+padding:4rem 2rem;
+display:flex;
+gap:2rem;
+flex-wrap:wrap;
+align-items:center;
+}
+
+/* Text area */
+.hero-text{
+flex:1;
+}
+
+/* Image container */
+.hero-image{
+flex:1;
+}
+
+/* Image styling */
+.hero-image img{
+max-width:70%;
+transition:0.3s;
+}
+
+/* Image hover animation */
+.hero-image img:hover{
+transform:scale(1.03);
+}
+
+/* Tagline styling */
+.tagline{
+color:var(--accent-color);
+font-weight:bold;
+margin:1rem 0;
+}
+
+/* ===== PROJECTS GRID ===== */
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:1.5rem;
+margin-top:2rem;
+}
+
+/* Project card */
+.project-card{
+background:var(--card-bg);
+padding:1rem;
+border-radius:10px;
+transition:0.3s;
+}
+
+/* Card hover animation */
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Button for project details */
+.details-btn{
+margin-top:1rem;
+padding:8px 12px;
+border:none;
+background:var(--accent-color);
+color:white;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.details-btn:hover{
+transform:translateY(-2px);
+}
+
+/* Hidden project details */
+.project-details{
+max-height:0;
+opacity:0;
+margin-top:0;
+padding:0 0.8rem;
+background:rgba(0,0,0,0.05);
+border-radius:8px;
+
+/* Animation when showing */
+transition:max-height .4s,opacity .4s,margin-top .4s,padding .4s;
+}
+
+/* When details are visible */
+.project-details.show{
+max-height:200px;
+opacity:1;
+margin-top:1rem;
+padding:.8rem;
+}
+
+/* Contact cards */
+.social-links p{
+background:var(--card-bg);
+padding:10px;
+border-radius:8px;
+margin-top:10px;
+transition:0.3s;
+}
+
+/* Hover animation */
+.social-links p:hover{
+transform:translateX(4px);
+}
+
+/* Footer */
+.footer{
+text-align:center;
+padding:1.5rem;
+border-top:1px solid #ddd;
+margin-top:2rem;
+}
+
+/* Name input area */
+.name-box{
+margin-top:20px;
+}
+
+/* Input style */
+.name-box input{
+padding:8px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* Button style */
+.name-box button{
+padding:8px 12px;
+background:var(--accent-color);
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-left:8px;
+}
+
+/* Greeting message */
+#greeting-message{
+margin-top:10px;
+font-weight:bold;
+}
