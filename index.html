@@ -110,11 +110,28 @@
 
       <h2>Projects</h2>
 
+      <div class="project-controls">
+  <label for="filter-category">Filter:</label>
+  <select id="filter-category">
+    <option value="all">All</option>
+    <option value="web">Web</option>
+    <option value="java">Java</option>
+    <option value="algorithms">Algorithms</option>
+  </select>
+
+  <label for="sort-projects">Sort:</label>
+  <select id="sort-projects">
+    <option value="newest">Newest</option>
+    <option value="oldest">Oldest</option>
+    <option value="title">Title</option>
+  </select>
+</div>
+
       <!-- Grid layout for projects -->
       <div class="projects-grid">
 
         <!-- ===== PROJECT CARD 1 ===== -->
-        <article class="project-card">
+        <article class="project-card" data-category="java" data-date="2024-10-10">
 
           <h3>Project One</h3>
 
@@ -139,7 +156,7 @@
 
 
         <!-- ===== PROJECT CARD 2 ===== -->
-        <article class="project-card">
+        <article class="project-card" data-category="algorithms" data-date="2025-02-15">
 
           <h3>Project Two</h3>
 
@@ -166,22 +183,33 @@
 
     </section>
 
+    <section id="github" class="section">
+  <h2>Latest GitHub Projects</h2>
+  <p>These repositories are fetched live from GitHub.</p>
+
+  <div id="repo-status"></div>
+  <div id="repo-list" class="projects-grid"></div>
+</section>
+
 
     <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="section">
+  <h2>Contact</h2>
 
-      <h2>Contact</h2>
+  <form id="contact-form" novalidate>
+    <input type="text" id="contact-name" placeholder="Your name">
+    <input type="email" id="contact-email" placeholder="Your email">
+    <textarea id="contact-message" placeholder="Your message"></textarea>
+    <button type="submit">Send</button>
+    <p id="form-message"></p>
+  </form>
 
-      <!-- Social links -->
-      <div class="social-links">
-
-        <p><strong>Instagram:</strong> m.h.3.7</p>
-        <p><strong>Snapchat:</strong> m7md.0004</p>
-        <p><strong>Email:</strong> s202244500@kfupm.edu.sa</p>
-
-      </div>
-
-    </section>
+  <div class="social-links">
+    <p><strong>Instagram:</strong> m.h.3.7</p>
+    <p><strong>Snapchat:</strong> m7md.0004</p>
+    <p><strong>Email:</strong> s202244500@kfupm.edu.sa</p>
+  </div>
+</section>
 
   </main>
 
@@ -189,6 +217,7 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <p>© 2026 Mohammed Al Ayyash. All rights reserved.</p>
+    <p id="time-on-site">Time on site: 0 seconds</p>
   </footer>
 
 

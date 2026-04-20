@@ -251,3 +251,70 @@ margin-left:8px;
 margin-top:10px;
 font-weight:bold;
 }
+
+.project-controls{
+display:flex;
+gap:1rem;
+flex-wrap:wrap;
+margin:1rem 0 2rem;
+}
+
+.project-controls select{
+padding:8px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+#contact-form{
+display:flex;
+flex-direction:column;
+gap:1rem;
+max-width:500px;
+margin-bottom:2rem;
+}
+
+#contact-form input,
+#contact-form textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font:inherit;
+}
+
+#contact-form button{
+padding:10px 14px;
+background:var(--accent-color);
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+#form-message,
+#repo-status,
+#time-on-site{
+margin-top:10px;
+font-weight:bold;
+}
+
+#repo-list a{
+display:inline-block;
+margin-top:10px;
+color:var(--accent-color);
+text-decoration:none;
+}
+
+@media (max-width: 768px){
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  .navbar{
+    flex-direction:column;
+    gap:1rem;
+  }
+
+  .hero{
+    flex-direction:column;
+  }
+}

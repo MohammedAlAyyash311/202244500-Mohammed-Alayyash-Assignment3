@@ -1,40 +1,20 @@
-# Assignment 2 – Interactive Portfolio Website
+# Assignment 3 Portfolio
 
-## Project Description
-This project is an improved version of my personal portfolio website from Assignment 1. The goal of this assignment was to make the website more interactive, modern, and user-friendly using HTML, CSS, and JavaScript.
-
-The website includes dynamic content, local storage for saving preferences, animations and transitions, and user feedback messages. It is designed to work well on desktop and mobile devices.
+## Description
+A personal portfolio website built with HTML, CSS, and JavaScript. It includes GitHub API integration, project filtering and sorting, theme persistence, contact form validation, and local storage features.
 
 ## Features
-- Responsive portfolio layout
-- About, Projects, and Contact sections
-- Dark and light theme toggle
-- Theme preference saved using `localStorage`
-- User name saved using `localStorage`
-- Greeting message based on saved user input
-- Expand/collapse project details
-- Smooth scrolling between sections
-- Hover effects on buttons, cards, links, and image
-- Error message for empty name input
-- Success message when the name is saved
+- Dark/light mode toggle
+- Saved visitor name
+- Project detail toggles
+- Project filtering and sorting
+- Contact form validation
+- GitHub API integration
+- Time on site counter
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
+## Run Locally
+1. Download or clone the repository
+2. Open `index.html` in a browser
 
-## Folder Structure
-```text
-assignment-2/
-├── README.md
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   └── images/
-├── docs/
-│   ├── ai-usage-report.md
-│   └── technical-documentation.md
-└── .gitignore
+## AI Usage
+AI tools were used for debugging, planning features, and improving documentation. Full details are in `docs/ai-usage-report.md`.
